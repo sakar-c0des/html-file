@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: lavender;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.toggle-container {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.toggle-label .fas {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.toggle-label .fa-sun {
+    left: 10px;
+}
+
+.toggle-label .fa-moon {
+    right: 2px;
+}
+
+.ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label .ball {
+    transform: translateX(30px);
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #666;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    margin-top: -85px;
+    font-family: initial;
+}
+
+img {
+    object-fit: cover;
+}
+
+.image img {
+    height: 175px;
+    border-radius: 6px;
+    width: 285px;
+    transition: 0.5s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+    box-shadow: 23px 7px 39px 14px rgb(130, 130, 130);
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11px;
+}
+
+.title {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.title p {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+    font-family: "Playwrite ES", cursive;
+    text-shadow: 5px 4px 11px #878686;
+    color: white;
+}
+
+.bio {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+sub {
+    font-size: 15px;
+}
+
+.full-blog {
+    margin: 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    transition: 0.1s ease-in-out;
+    box-shadow: 23px 3px 40px -20px gray;
+}
+
+.full-blog:hover {
+    box-shadow: 23px 7px 39px 14px gray;
+}
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .title {
+    background-color: #333333;
+}
+
+body.dark-mode .title p {
+    color: #ffffff;
+}
+
+body.dark-mode .bio {
+    color: #cccccc;
+}
+
+body.dark-mode .head p {
+    color: #ffffff;
+}
+
+body.dark-mode .image img:hover {
+    box-shadow: 23px 7px 39px 14px #000000;
+}
+
+@media(max-width: 384px) {
+    .toggle-container {
+        top: 185px;
+    }
+}
+p{
+    text-align: center;
+}
