@@ -76,6 +76,11 @@ a:hover{
         display: none;
     }
 }
+@media(max-width:400px){
+    .login-content{
+        scale: 0.8;
+    }
+}
 .right-side{
     display: flex;
     align-items: center;
