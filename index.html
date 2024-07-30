@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakar's portfolio</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="facebook_profile_image.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="right-side" >
+            <p class="logo" id="logo" >Sakar <span>codes</span></p>
+        </div>
+
+        <ul class="sidebar">
+            <li onclick="removeside()"><a><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="darkblog.html" >Blogs</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li class="hideo12" onclick="showlogin()"><a>Login</a></li>
+        </ul>
+
+       
+
+        <ul>
+            <li><a href="#" class="hideo">Home</a></li>
+            <li class="hideo" ><a href="darkblog.html">Blogs</a></li>
+            <li class="hideo"><a href="#about-us">About</a></li>
+            <li class="hideo"><a href="#contact-us">Contact Us</a></li>
+            <li class="hideoss" onclick="showlogin()"><a>Login</a></li>
+            <li class="hide" onclick="showsidebar()"><a><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+
+        <div class="login-popup" id="loginPopup">
+            <div class="login-content">
+                <span class="close" id="closePopup">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="login-input" placeholder="Enter your username" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="login-input" placeholder="Enter your password" required>
+
+                    <button type="submit">Login</button>
+                    
+                    <p>Don't have an account? <a >Sign up</a></p>
+                    <P style="color: orange; font-size: 10px;">Just an demo of non-functional Frontend login interface </P>
+                </form>
+            </div>
+
+
+        </div>
+    </nav>
+
+
+    <div class="introduction">
+        <div class="info" style="padding: 30px;">
+            <p id="name">Sakar Shilpakar.</p>
+            <p>- | Web developer | Website designer | Graphics Designer |</p>
+            <p class="front">Frontend developer</p>
+        </div>
+        <img src="images/sakar.jpg" class="profile">
+    </div>
+
+    <div id="about-us">
+        <div > <img class="java" src="images/js.png" >        </div>
+        <div class="about">     
+            <p class="ab-head">ABOUT</p>
+            <p> - I am a skilled website designer and web developer with expertise in HTML, CSS, and JavaScript.with a keen eye for design and a passion for crafting seamless user experiences, I create visually stunning and highly functional websites that captivate and engage audiences.</p>         </div>
+        <div ><img class="ht" src="images/htcs.png.png" ></div>
+    </div>
+
+
+    <div id="contact-us">
+        <div class="contact-desc">
+            <p class="conhead">CONTACT US</p> 
+            <P style="color: white; font-weight: 100;">We’d love to hear from you! Whether you have questions, feedback, or simply want to say hello, our team is here to help. Reach out to us through the Social media links below, and we’ll get back to you as soon as possible. Your thoughts and inquiries are important to us, and we are committed to providing you with excellent service and support.</P>
+            <br>
+        </div>
+        <div class="msg">
+
+            <div class="em">
+                
+                <div class="email">
+                    <h2>Send us Email</h2>
+                    <hr>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="e0741c49-2dde-4649-9ef8-da85c8359ee8">
+                        <input type="text" name="name" placeholder="Your Name" class="Contact-fill" required>
+                        <input type="email" name="email" placeholder="Your Email" class="Contact-fill" required>
+                        <textarea name="message" placeholder="Your Message" class="Contact-fill"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ptag">
+            <!-- <p>My social media accounts</p> -->
+        </div>
+
+        <div class="links">
+
+
+            <a href="https://www.instagram.com/igx_sacar/" class="fa-brands fa-instagram" target="_blank"></a>
+            <a href="https://www.facebook.com/sakar.clpakar" class="fa-brands fa-facebook" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/sakar-shilpakar-572974283/" class="fa-brands fa-linkedin" target="_blank"></a>
+            <a href="https://x.com/sakarcodes" class="fa-brands fa-x-twitter" target="_blank"></a>
+            <a href="https://github.com/sakar-c0des" class="fa-brands fa-github" target="_blank"></a>
+            <a href=" https://discord.com/users/1203014376919924796" class="fa-brands fa-discord" target="_blank"></a>
+        </div>
+        </div>
+
+    
+
+
+
+    <script src="ps.js">
+
+
+
+    </script>
+</body>
+
+</html>
