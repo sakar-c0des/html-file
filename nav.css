@@ -240,6 +240,8 @@ p a:hover {
     border-radius: 21px;
 }
 .introduction{
+    padding-bottom: 0;
+    display: flex;
     position: relative;
     background-color: #060606a8;
     padding: 60px;
@@ -249,11 +251,8 @@ p a:hover {
 }
 .profile{
     height: 368px;
-    position: absolute;
     z-index: 9900;
     mix-blend-mode: multiply;
-    top: 4px;
-    right: 142px;
 
 }
 
@@ -261,13 +260,6 @@ p a:hover {
     margin-left: -80px;
 }
 @media(max-width:850px){
-    .profile{
-        /* display: none; */
-        height: 238px;
-        top: 133px;
-    }
-}
-@media(max-width:509px){
     .profile{
         display: none;
     }
