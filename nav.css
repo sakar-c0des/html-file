@@ -10,14 +10,22 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 body{
     min-height: 100vh;
-    background-image: url(background.jpg) ;
+    background-image: url(images/background.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 nav ul{
     width: 100%;
@@ -78,7 +86,7 @@ a:hover{
 }
 @media(max-width:400px){
     .login-content{
-        scale: 0.8;
+        scale: 0.6;
     }
 }
 .right-side{
@@ -248,6 +256,11 @@ p a:hover {
 }
 .info p{
     color: white;
+}
+@media(max-width:365px){
+    .info p{
+        font-size: 10px;
+    }
 }
 .profile{
     height: 368px;
